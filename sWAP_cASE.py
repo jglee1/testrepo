@@ -1,4 +1,5 @@
 def swap_case(s):
+    """
     new_str = ""
     for e in s:
         if e.isupper():
@@ -13,10 +14,11 @@ def swap_case(s):
             new_str += e
             print(new_str)
     return new_str
-
+    """
+    
 input_str = "Swap Case 1"
 
-swap_case(input_str)
+#swap_case(input_str)
 
 output_list = [ e.lower() if e.isupper() else e.upper() if e.islower() else e for e in input_str ]
 print(output_list)
